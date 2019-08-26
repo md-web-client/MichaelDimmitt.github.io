@@ -28,20 +28,20 @@ var things_i_do = [
 function display_things_i_do() {
   what_i_do = things_i_do[Math.floor(Math.random() * things_i_do.length)];
   document.getElementById("what_i_do").innerHTML = what_i_do;
-  setBackgroundImage();
+  // setBackgroundImage();
 }
 
-function setBackgroundImage() {
-  var image_random_number = Math.floor((Math.random() * 26) + 1);
-  var imageHolder = document.getElementById("floating-image")
+// function setBackgroundImage() {
+//   var image_random_number = Math.floor((Math.random() * 26) + 1);
+//   var imageHolder = document.getElementById("floating-image")
 
-  imageHolder.style.backgroundImage = "url(images/image_" + image_random_number + ".gif)";
-}
+//   imageHolder.style.backgroundImage = "url(images/image_" + image_random_number + ".gif)";
+// }
 
 
 document.getElementById("what_i_do").addEventListener("click", function(){
   display_things_i_do();
-  ga('send', 'event', 'description', 'click', 'what i do');
+  // ga('send', 'event', 'description', 'click', 'what i do');
 }, false);
 
 display_things_i_do();
