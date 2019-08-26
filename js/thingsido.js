@@ -18,7 +18,7 @@ var things_i_do = [
   "learning functional programming",
   "obsessing over BMO",
   "making weird faces in <a href='http://chat.meatspac.es'>meatspace</a>",
-  "in <a href='http://chat.meatspac.es'>meatspace</a>",
+  "in the <a href='https://twitter.com/m_dimmitt'>twitter-sphere</a>",
   "mentoring at <a href='http://ladieslearningcode.com/'>Ladies Learning Code</a>",
   "making random gifs",
   "staining coffee cups for <a href='http://coffeecupstain.tumblr.com'>art</a>",
@@ -41,9 +41,6 @@ function display_things_i_do() {
 
 document.getElementById("what_i_do").addEventListener("click", function(){
   display_things_i_do();
-  // ga('send', 'event', 'description', 'click', 'what i do');
 }, false);
 
 display_things_i_do();
-
-document.addEventListener("touchstart", function(){}, true);
