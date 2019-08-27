@@ -9,8 +9,8 @@
 
 <link rel="stylesheet" href="grid.css">
 
-<body class="gridiron" style="width: 682px;">
-    <div></div>
+<body class="gridiron" style="width: 540px;">
+    <div class="grid-full"></div>
   <h1 class="title justify-self-center grid-full">Michael Dimmitt</h1>
   <p class="ds justify-self-center grid-full">Elixir &nbsp; Bash &nbsp; and Javascript Developer</p>
   <p class="ds justify-self-center grid-full" style="padding-top: 10px; padding-bottom: 20px;" >
@@ -20,21 +20,23 @@
     FrontEnd
   </p>
   <div class="pb-20 grid-full justify-self-center">
-  <a class="grid-half1 justify-self-end nav-link active" href="https://github.com/michaeldimmitt">github</a>
-  <a class="grid-half2 justify-self-start nav-link" href="https://twitter.com/m_dimmitt">twitter</a>
+    <div class="flex justify-center" >
+      <a class="grid-half1 justify-self-end nav-link f3 active" href="https://github.com/michaeldimmitt">github</a>
+      <a class="grid-half2 justify-self-start nav-link f3" href="https://twitter.com/m_dimmitt">twitter</a>
+    </div>
+    <div class="flex pb-20 grid-full" >
+      <a class="nav-link f3 active" href="https://stock-tick-website.surge.sh/symbols">stocktick</a><a class="nav-link f3" href="https://repository-dashboard.surge.sh">dashboard</a>
+      <a class="nav-link f3" href="https://github.com/MichaelDimmitt/gh_reveal#reveal_brew">reveal</a><a class="nav-link f3" href="https://github.com/MichaelDimmitt/emoji-terminal">emoji_terminal</a>
+    </div>
+    <div class="flex pb-20 grid-full" >
+      <a class="nav-link f3 active" href="https://github.com/MichaelDimmitt/know-your-package-manager">know-your-package-manager</a>
+      <a class="nav-link f3" href="https://github.com/MichaelDimmitt/meetup-subscribe#usage">meetup-subscribe</a>
+    </div>
   </div>
-  <div class="pb-20 grid-full justify-self-center">
-    <a class="nav-link active" href="https://stock-tick-website.surge.sh/symbols">stocktick</a><a class="nav-link" href="https://repository-dashboard.surge.sh">dashboard</a>
-    <a class="nav-link" href="https://github.com/MichaelDimmitt/gh_reveal#reveal_brew">reveal</a><a class="nav-link" href="https://github.com/MichaelDimmitt/emoji-terminal">emoji_terminal</a>
-  </div>
-  <div class="pb-20 grid-full justify-self-center">
-    <a class="nav-link active" href="https://github.com/MichaelDimmitt/know-your-package-manager">know-your-package-manager</a>
-    <a class="nav-link" href="https://github.com/MichaelDimmitt/meetup-subscribe#usage">meetup-subscribe</a>
-  </div>
-  <p style="grid-column: 1 / 5; justify-self: center; font-size: 1.5rem; padding: 0px 100px;">
+  <p class="grid-full f3">
     When I'm not <a href="https://github.com/michaeldimmitt">programming</a>, I can usually be found <span style="color: #acacac;" id="what_i_do"></span>.
   </p>
-  <p style="grid-column: 1 / 5; justify-self: center; font-size: 1.5rem; padding: 0px 100px;">
+  <p class="grid-full f3">
     <span id="whereami"></span>
   </p>
 </body>

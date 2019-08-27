@@ -30,13 +30,11 @@ a{
   font-size: 2rem;
   color: #666;
   font-weight: 300;
-  text-align: center;
   margin: 0;
 }
 .title {
   font-size: 4rem;
   font-weight: 700;
-  text-align: center;
   margin: 14px;
 }
 .gridiron{
@@ -49,7 +47,5 @@ a{
 
 .nav-link:hover{color:#0056b3;}
 .nav-link {
-  font-size: 1.5rem;
-  /* display: block; */
   padding: .5rem 1rem;
 }
