@@ -1,6 +1,6 @@
 var things_i_do = [
   "feasting on sushi",
-  "reading <a href='https://leanpub.com/javascriptallongesix/readjavascript'>JavaScript Allongé</a>",
+  "reading <a href='https://leanpub.com/javascriptallongesix/readjavascript'>JavaScript Allonge</a>",
   "playing games on Steam</a>",
   "writing <a href='https://medium.com/@michaelgdimmitt'>blogs</a>",
   "reading books</a>",
@@ -28,16 +28,26 @@ function display_things_i_do() {
   // setBackgroundImage();
 }
 
+let timeOutHandle;
+
+const displayImmediatelyAndThenAfterTimeout = () => {
+  display_things_i_do();
+  timeOutHandle = setTimeout(function() {
+    displayImmediatelyAndThenAfterTimeout();
+  }, 2400); // previously 1000
+}
+
+document.getElementById("what_i_do").addEventListener("click", function(){
+  clearTimeout(timeOutHandle);
+  displayImmediatelyAndThenAfterTimeout();
+}, false);
+
+displayImmediatelyAndThenAfterTimeout()
+
 // function setBackgroundImage() {
 //   var image_random_number = Math.floor((Math.random() * 26) + 1);
 //   var imageHolder = document.getElementById("floating-image")
 
 //   imageHolder.style.backgroundImage = "url(images/image_" + image_random_number + ".gif)";
 // }
-
-
-document.getElementById("what_i_do").addEventListener("click", function(){
-  display_things_i_do();
-}, false);
-
-display_things_i_do();
+  
