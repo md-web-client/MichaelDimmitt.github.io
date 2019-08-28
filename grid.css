@@ -49,3 +49,31 @@ a{
 .nav-link {
   padding: .5rem 1rem;
 }
+.dropdown { line-height: 40px; position: relative; display: inline-block; }
+.dropdown-content { 
+  display: none; z-index: 1; left: 50%;top: 100%;transform: translateX(-50%);
+}
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+  min-width: 110px;
+  padding: 0px 5px;
+}
+.arrow_box {
+	position: absolute;
+	border: 4px solid #c2e1f5;
+}
+.arrow_box:after, .arrow_box:before {
+  position: absolute;
+  height: 0; width: 0;
+	bottom: 100%; left: 50%;
+	border: solid transparent;
+  pointer-events: auto;
+  content: " ";
+}
+
+.arrow_box:before {
+	border-bottom-color: #c2e1f5;
+  /*size of the triangle.*/
+  border-width: 15px;
+  margin-left: -15px;
+}
