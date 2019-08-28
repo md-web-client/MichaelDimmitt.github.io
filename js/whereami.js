@@ -19,7 +19,7 @@ fetchJSONFile('https://api.meetup.com/self/events?page=1&scroll=next_upcoming&ac
     const { link, venue, local_date, name }  = data[0];
 
     const address = (venue.address_1 + " " + venue.city + ", "  + venue.state);
-    const nextEventDate = new Date(local_date);
+    const nextEventDate = new Date(local_date+'T00:00');
 
     const nextEventDayString = 
         new Intl.DateTimeFormat('en-US', {month: "short"}).format(nextEventDate) + ' ' +
