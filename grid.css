@@ -5,6 +5,18 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 8vh auto;
 }
+
+.gridcomponent{
+  min-height: calc(100vh - 60px);
+  width: 702px;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+  border: solid; 
+  padding: 0px 80px;
+}
+
 .grid-full{
   grid-column: 1 / 5;
 }
@@ -14,14 +26,11 @@
 .grid-half2{
   grid-column: 3 / 5;
 }
-.justify-self-center{
-  justify-self: center;
+
+#hobbies{
+  max-width: 500px;
 }
-a{
-  display:inline;
-  color: #007bff;
-  text-decoration: none;
-}
+
 .pb-20{
   padding-bottom: 16px;
 }
@@ -33,11 +42,23 @@ a{
 }
 .ds{
   padding-top: 10px;
-  font-family: 'Roboto', sans-serif;
   font-size: 2rem;
+  margin: 0;
+}
+.bb-2d{
+  border-bottom: 2px dashed;
+  border-color: #acacac;
+}
+.robo-text{
   color: #666;
   font-weight: 300;
-  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a{
+  display:inline;
+  color: #007bff;
+  text-decoration: none;
 }
 .title {
   font-size: 4rem;
